@@ -1,0 +1,105 @@
+/* LEFT SIDE MENU */
+#menu {
+   height: fit-content;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.menuOption {
+   width: 115px;
+   margin: 5px;
+
+   background: rgb(179, 179, 179);
+   border-color: rgb(179, 179, 179);
+
+   transition: background-color 0.3s, border-color 0.3s;
+}
+.menuOption:focus {
+   outline: none;
+}
+
+#saveLevel:hover {
+   background-color: lightgreen;
+   border-color: lightgreen;
+}
+#loadLevel:hover {
+   background-color: lightblue;
+   border-color: lightblue;
+}
+#wall:hover {
+   background-color: blanchedalmond;
+   border-color: blanchedalmond;
+}
+#treasure:hover {
+   background-color: burlywood;
+   border-color: burlywood;
+}
+#light:hover {
+   background-color: rgb(255, 205, 68);
+   border-color: rgb(255, 205, 68);
+}
+#enemy:hover {
+   background-color: crimson;
+   border-color: crimson;
+}
+
+.openButton {
+   font-weight: bold;
+   font-style: italic;
+
+   border: 2px solid rgb(33, 33, 33);
+}
+.openButton:hover {
+   background-color: violet;
+   border-color: violet;
+}
+
+/* LOAD MENU */
+#screenCover {
+   width: 100vw;
+   height: 100vh;
+
+   position: fixed;
+   background: rgba(70, 70, 70, 0.5);
+
+   display: none;
+
+   flex-direction: column;
+   align-items: center;
+
+   overflow: auto;
+}
+
+.levelsListElement {
+   width: 750px;
+   height: 100px;
+   margin: 10px;
+
+   background: lightgray;
+   border: 10px outset grey;
+
+   text-align: center;
+
+   flex-shrink: 0;
+
+   display: flex;
+
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   overflow: auto;
+}
+
+.levelsListElementID {
+   width: 10%;
+}
+.levelsListElementName {
+   width: 50%;
+}
+.levelsListElementDate {
+   width: 40%;
+}

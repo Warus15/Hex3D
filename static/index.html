@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Hex Generator</title>
+
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/menu.css" />
+
+      <script src="scripts/libs/jQuery.js"></script>
+
+      <script src="scripts/Main.js"></script>
+      <script src="scripts/classes/Hex.js"></script>
+      <script src="scripts/classes/HexDesc.js"></script>
+   </head>
+   <body>
+      <div id="container">
+         <div id="menuContainer">
+            <div id="menu">
+               <select name="boardSize" id="boardSize" class="menuOption">
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+               </select>
+               <input
+                  type="text"
+                  name="levelName"
+                  id="levelName"
+                  class="menuOption"
+                  placeholder="Enter level name..."
+                  maxlength="25"
+               />
+               <button id="saveLevel" class="menuOption">
+                  Save level on server
+               </button>
+               <button id="loadLevel" class="menuOption">
+                  Load level from server
+               </button>
+               <button class="menuOption" id="wall">Wall</button>
+               <button class="menuOption" id="treasure">Treasure</button>
+               <button class="menuOption" id="light">Light</button>
+               <button class="menuOption" id="enemy">Enemy</button>
+               <button class="menuOption openButton" id="openHex3D">
+                  Open Hex
+               </button>
+               <button class="menuOption openButton" id="openGame">
+                  Open Game
+               </button>
+               <button class="menuOption openButton" id="openSimpleMovement">
+                  Open Simple Movement
+               </button>
+               <button
+                  class="menuOption openButton"
+                  id="openSimpleAllyMovement"
+               >
+                  Open Simple Ally Movement
+               </button>
+               <button
+                  class="menuOption openButton"
+                  id="openSimpleAlliesMovement"
+               >
+                  Open Simple Allies Movement
+               </button>
+               <button class="menuOption openButton" id="openAllyModelMovement">
+                  Open Ally Model Movement
+               </button>
+            </div>
+         </div>
+         <div id="jsonPreview"></div>
+         <div id="editor"></div>
+         <div id="screenCover"></div>
+      </div>
+   </body>
+</html>
